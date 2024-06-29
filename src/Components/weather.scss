@@ -47,14 +47,29 @@
         position: relative;
         margin-top: 20px;
 
+        .no-txt{
+          font-size: 18px;
+          font-style: italic;
+        }
+        .nodataimg{
+            width: 160px;
+            height: 160px;
+            mix-blend-mode: multiply;
+            object-fit: cover;
+        }
         .container {
             padding: 10px;
 
             .location-name {
                 text-align: center;
                 font-size: 26px;
+                text-transform: capitalize;
             }
 
+            .date-txt{
+                font-size: 12px;
+                font-style: italic;
+            }
             .description {
                 display: flex;
                 align-items: center;
