@@ -105,17 +105,17 @@ const WeatherDashboard = () => {
               {
                 data.name !== undefined &&
                 <div className="footer">
-                  <div className="feels">
-                    {data.main ? <div className='bold'>{data.main.feels_like.toFixed()}°C</div> : null}
-                    <div>Feels Like</div>
+                  <div >
+                    {data.main ? <div>{data.main.feels_like.toFixed()}°C</div> : null}
+                    <div className="feels">Feels Like</div>
                   </div>
                   <div className="humidity">
-                    {data.main ? <div className='bold'>{data.main.humidity}%</div> : null}
-                    <div>Humidity</div>
+                    {data.main ? <div>{data.main.humidity}%</div> : null}
+                    <div className="humidity">Humidity</div>
                   </div>
                   <div className="wind">
-                    {data.wind ? <div className='bold'>{data.wind.speed.toFixed()} MPH</div> : null}
-                    <div>Wind Speed</div>
+                    {data.wind ? <div>{data.wind.speed.toFixed()} MPH</div> : null}
+                    <div className="wind">Wind Speed</div>
                   </div>
                 </div>
               }
